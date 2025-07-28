@@ -55,22 +55,17 @@ Ce projet a pour objectif de développer un système intelligent de détection d
 * **Git** / **GitHub** : (Contrôle de version)
 
 ## 4. Structure du Projet
-
 .
 ├── data/
-│   └── spam_emails.csv        # Votre jeu de données brut d'emails
-├── notebooks/
-│   ├── 01_eda_preprocessing.ipynb # Notebook pour l'EDA et le prétraitement initial
-│   └── 02_model_training_evaluation.ipynb # Notebook pour l'entraînement, l'évaluation et l'optimisation des modèles
-├── src/
-│   ├── preprocessing.py       # Module Python pour les fonctions de prétraitement réutilisables
-│   └── models.py              # Module Python pour la définition et l'entraînement des modèles
+│   └── DataSet_Emails.csv
+├── note-book.ipynb
+├── preprocessing.py # Module Python pour les fonctions de prétraitement réutilisables
 ├── models/
-│   └── best_model.pkl         # Fichier pour sauvegarder le modèle entraîné
-│   └── tfidf_vectorizer.pkl   # Fichier pour sauvegarder le vectorizer TF-IDF
-├── app.py                     # Script principal de l'application Streamlit
-├── requirements.txt           # Liste des dépendances Python
-└── README.md                  # Ce fichier
+│   ├── best_model.pkl
+│   └── tfidf_vectorizer.pkl
+├── app.py
+├── requirements.txt
+└── README.md
 
 ## 5. Installation
 
