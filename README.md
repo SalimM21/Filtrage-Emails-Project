@@ -68,7 +68,7 @@ Ce projet a pour objectif de développer un système intelligent de détection d
 ├── app.py
 ├── requirements.txt
 └── README.md
-
+```
 ## 5. Installation
 
 Suivez ces étapes pour configurer et exécuter le projet localement :
