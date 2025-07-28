@@ -55,6 +55,8 @@ Ce projet a pour objectif de développer un système intelligent de détection d
 * **Git** / **GitHub** : (Contrôle de version)
 
 ## 4. Structure du Projet
+
+```bash
 .
 ├── data/
 │   └── DataSet_Emails.csv
