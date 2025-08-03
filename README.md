@@ -130,7 +130,7 @@ Ce projet est géré en suivant une approche agile. Les tâches sont planifiées
 ![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-2000+-blue?style=for-the-badge)
 ![Data Points](https://img.shields.io/badge/Data%20Points-5000+-green?style=for-the-badge)
 ![Model Accuracy](https://img.shields.io/badge/Model%20Accuracy-98.6%25-brightgreen?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-orange?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202025-orange?style=for-the-badge)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
@@ -139,8 +139,8 @@ Ce projet est géré en suivant une approche agile. Les tâches sont planifiées
 [![Accuracy](https://img.shields.io/badge/Accuracy-98.6%25-brightgreen.svg)](#performance)
 
 ### 📈 Métriques de développement
-- **Commits** : 150+
-- **Issues résolues** : 25+
+- **Commits** : 30+
+- **Issues résolues** : 5+
 - **Tests** : 95% de couverture
 - **Utilisateurs actifs** : 500+
 
