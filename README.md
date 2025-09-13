@@ -142,7 +142,7 @@ Ce projet est géré en suivant une approche agile. Les tâches sont planifiées
 - **Commits** : 30+
 - **Issues résolues** : 5+
 - **Tests** : 95% de couverture
-- **Utilisateurs actifs** : 500+
+
 
 <div align="center">
 
