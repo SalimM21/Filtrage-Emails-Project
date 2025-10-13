@@ -20,6 +20,77 @@ Ce projet a pour objectif de développer un système intelligent de détection d
 
 ## 2. Fonctionnalités
 
+```mermaid
+flowchart TB
+    %% ========================
+    %% Pipeline de Classification Spam/Ham
+    %% ========================
+
+    %% Analyse Exploratoire des Données (EDA)
+    subgraph EDA[" Analyse Exploratoire des Données"]
+        EDA1(["Compréhension structure des données"])
+        EDA2(["Gestion valeurs manquantes et doublons"])
+        EDA3(["Analyse distributions et corrélations"])
+        EDA4(["Nuages de mots pour Spam et Ham"])
+    end
+
+    %% Prétraitement du texte
+    subgraph PREPROCESS[" Prétraitement du Texte"]
+        PRE1(["Conversion en minuscules"])
+        PRE2(["Suppression doublons et valeurs vides"])
+        PRE3(["Tokenisation"])
+        PRE4(["Suppression stopwords"])
+        PRE5(["Suppression ponctuation / caractères spéciaux"])
+        PRE6(["Stemming"])
+    end
+
+    %% Extraction des caractéristiques
+    subgraph FEATURES[" Extraction des Caractéristiques"]
+        F1(["Vectorisation : TF-IDF ou CountVectorizer"])
+    end
+
+    %% Modélisation et évaluation
+    subgraph MODEL[" Entraînement & Évaluation"]
+        M1(["Decision Tree Classifier"])
+        M2(["Naïve Bayes Classifier"])
+        M3(["Support Vector Machine (SVM)"])
+        M4(["Évaluation : Matrice de confusion, Précision, Rappel, F1-score"])
+        M5(["Validation croisée"])
+    end
+
+    %% Optimisation des hyperparamètres
+    subgraph TUNING[" Optimisation Hyperparamètres"]
+        T1(["GridSearchCV ou RandomizedSearchCV"])
+    end
+
+    %% Sélection et sauvegarde du meilleur modèle
+    subgraph SAVE[" Sélection & Sauvegarde du Meilleur Modèle"]
+        S1(["Comparaison performances"])
+        S2(["Persistance du modèle optimal"])
+    end
+
+    %% Interface utilisateur
+    subgraph UI[" Interface Utilisateur (Streamlit)"]
+        UI1(["Visualisation résultats EDA"])
+        UI2(["Tester modèle en temps réel"])
+        UI3(["Afficher prédiction Spam/Ham et probabilité"])
+    end
+
+    %% ========================
+    %% Flux principal
+    %% ========================
+    EDA1 --> EDA2 --> EDA3 --> EDA4 --> PRE1 --> PRE2 --> PRE3 --> PRE4 --> PRE5 --> PRE6
+    PRE6 --> F1 --> M1
+    F1 --> M2
+    F1 --> M3
+    M1 --> M4
+    M2 --> M4
+    M3 --> M4
+    M4 --> M5 --> T1 --> S1 --> S2 --> UI2
+    EDA4 --> UI1
+    S2 --> UI2 --> UI3
+
+```
 * **Analyse Exploratoire des Données (EDA)** : Compréhension de la structure des données, gestion des valeurs manquantes et doublons, analyse des distributions et corrélations, création de nuages de mots (Word Clouds) pour Spams et Hams.
 * **Prétraitement du Texte Robuste** :
     * Conversion en minuscules.
